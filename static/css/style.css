@@ -111,9 +111,7 @@ p { margin: 0 0 1em; }
 .main-nav a {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-size: 1rem;
   color: var(--color-secondary);
   padding: 8px 0;
   border-bottom: 2px solid transparent;
@@ -346,6 +344,21 @@ p { margin: 0 0 1em; }
 }
 .sidebar-block {
   text-align: left;
+}
+.sidebar-cta p {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.sidebar-map {
+  margin-top: 14px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.sidebar-map iframe {
+  display: block;
+  width: 100%;
 }
 .sidebar-title {
   font-family: var(--font-display);
