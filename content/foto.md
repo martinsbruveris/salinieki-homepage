@@ -5,12 +5,12 @@ url: "/foto/"
 
 ### 2025 – ELKS III, Bredfordā
 
-{{< gallery id="elks-2025" alt="ELKS III" >}}
+{{< gallery id="2025-07-elks" alt="ELKS III" >}}
 
 ### 2023 – XXVII Dziesmu un XVII Deju svētki
 
-{{< gallery id="svetki-2023" alt="Dziesmu un Deju svētki 2023" >}}
+{{< gallery id="2023-07-dziesmu-svetki" alt="Dziesmu un Deju svētki 2023" >}}
 
 ### 2019 – XV Latviešu dziesmu un deju svētki Kanādā
 
-{{< gallery id="kanada-2019" alt="Dziesmu un deju svētki Kanādā" >}}
+{{< gallery id="2019-07-kanada" alt="Dziesmu un deju svētki Kanādā" >}}
