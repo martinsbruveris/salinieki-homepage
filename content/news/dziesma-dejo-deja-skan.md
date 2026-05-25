@@ -21,7 +21,7 @@ Trešdiena un ceturtdiena pagāja kopmēģinājumos, mācoties deju izvietojumus
 
 Ceturtdienas vakarā bija ģenerālmēģinājums ar skatītājiem, un piektdien un sestdien divi koncerti. Un pēc sestdienas koncerta, kad skatītāji bija aizgājuši mājās, koncerta dalībniekiem bija kopīga ballīte.
 
-{{< figure src="images/foto/2025-08-dziesma-dejo/04-dzdds-dieva-zime.jpeg" alt="Dieva zīme" >}}
+{{< figure src="images/foto/2025-08-dziesma-dejo/04-dzdds-dieva-zime.jpg" alt="Dieva zīme" >}}
 
 Ar vārdiem grūti aprakstīt emocijas, kas radās, dejojot Mežaparka Lielajā estrādē kopā ar 8,000 dejotājiem un dziedātājiem. Nav svarīgi, ka deju laukums ir slīps un polka jādejo pret kalnu, vai ka pēc koncerta tikai vēlu naktī pārnācām mājās. Atmiņā paliek vienīgi pacilājums, kad sastājāmies, lai dejotu "Līku loku upe teka", un plūsmas sajūta, dejojot "Rūnu rakstus".
 
