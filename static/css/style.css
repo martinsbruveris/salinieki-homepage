@@ -30,11 +30,8 @@
   --shadow-card: 0 4px 18px rgba(4, 35, 71, 0.08);
   --shadow-hover: 0 8px 28px rgba(4, 35, 71, 0.16);
   --radius: 6px;
-  --font-heading: "Nunito", "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Nunito", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "Nunito", "Helvetica Neue", Arial, sans-serif;
-  --font-accent: "Nunito", "Helvetica Neue", Arial, sans-serif;
-  --font-hero: "Arkhip", "Nunito", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Nunito", "Helvetica Neue", Arial, sans-serif;
+  --font-hero: "Arkhip", var(--font-sans);
   --container: 1180px;
 }
 
@@ -42,7 +39,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: 17px;
   line-height: 1.65;
   color: var(--color-text);
@@ -54,7 +51,7 @@ a { color: var(--color-primary); text-decoration: none; transition: color 0.15s;
 a:hover { color: var(--color-primary-dark); }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   color: var(--color-secondary);
   line-height: 1.2;
   margin: 0 0 0.6em;
@@ -109,7 +106,7 @@ p { margin: 0 0 1em; }
   list-style: none;
 }
 .main-nav a {
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   font-weight: 600;
   font-size: 1rem;
   color: var(--color-secondary);
@@ -212,7 +209,7 @@ p { margin: 0 0 1em; }
   letter-spacing: 0.02em;
 }
 .hero-tagline {
-  font-family: var(--font-accent);
+  font-family: var(--font-sans);
   font-size: 1.25rem;
   margin: 0 0 36px;
   opacity: 0.95;
@@ -223,7 +220,7 @@ p { margin: 0 0 1em; }
   display: inline-block;
   padding: 12px 28px;
   border-radius: var(--radius);
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   font-weight: 600;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -254,7 +251,7 @@ p { margin: 0 0 1em; }
 
 /* ===== Sections =========================================== */
 .section-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 2rem;
   text-align: center;
   margin: 0 0 8px;
@@ -323,7 +320,7 @@ p { margin: 0 0 1em; }
 .news-card-media:hover img { transform: scale(1.04); }
 .news-card-body { padding: 28px 32px; }
 .news-card-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 1.4rem;
   margin: 0 0 10px;
 }
@@ -338,7 +335,7 @@ p { margin: 0 0 1em; }
 .news-card-text { color: var(--color-text); font-size: 0.98rem; }
 .news-card-more {
   margin-top: 14px;
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -384,7 +381,7 @@ p { margin: 0 0 1em; }
   width: 100%;
 }
 .sidebar-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 1.2rem;
   color: var(--color-secondary);
   margin: 0 0 18px;
@@ -401,7 +398,7 @@ p { margin: 0 0 1em; }
 .cal-date {
   font-weight: 700;
   color: var(--color-primary);
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
   margin-right: 4px;
 }
 .supporter-list {
@@ -459,7 +456,7 @@ p { margin: 0 0 1em; }
 }
 .cta-band h2 {
   color: #fff;
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 2.2rem;
   margin: 0 0 14px;
 }
@@ -498,7 +495,7 @@ p { margin: 0 0 1em; }
   text-align: center;
 }
 .page-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: clamp(2rem, 5vw, 3rem);
   margin: 0 0 12px;
   color: var(--color-secondary);
@@ -514,7 +511,7 @@ p { margin: 0 0 1em; }
 }
 .page-content h2,
 .page-content h3 {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   color: var(--color-secondary);
   margin-top: 1.6em;
 }
@@ -585,7 +582,7 @@ p { margin: 0 0 1em; }
 }
 .concert-list li strong {
   color: var(--color-primary);
-  font-family: var(--font-heading);
+  font-family: var(--font-sans);
 }
 @media (max-width: 540px) {
   .concert-list li { grid-template-columns: 1fr; gap: 2px; }
@@ -609,8 +606,8 @@ p { margin: 0 0 1em; }
   border-left: 3px solid var(--color-primary);
 }
 .page-nav-link.next { border-left: 0; border-right: 3px solid var(--color-primary); text-align: right; }
-.page-nav-link span { display: block; font-size: 0.85rem; color: var(--color-muted); font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.05em; }
-.page-nav-link strong { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; }
+.page-nav-link span { display: block; font-size: 0.85rem; color: var(--color-muted); font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.05em; }
+.page-nav-link strong { font-family: var(--font-sans); font-weight: 600; font-size: 1.05rem; }
 .page-nav-link:hover { background: #efece5; }
 
 /* Contact page styles */
@@ -629,7 +626,7 @@ p { margin: 0 0 1em; }
 .contact-card h3 {
   margin-top: 0;
   color: var(--color-secondary);
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
 }
 .contact-card a { font-weight: 600; }
 @media (max-width: 720px) {

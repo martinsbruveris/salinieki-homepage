@@ -1,27 +1,5 @@
 {{ define "main" }}
-{{ $slides := .Site.Params.heroSlides }}
-{{ if not $slides }}
-  {{ $slides = slice (dict "image" (.Params.heroImage | default "images/news/dejo-ar-mani-2026.jpg")) }}
-{{ end }}
-{{ $n := len $slides }}
-{{ $slideSeconds := 6 }}
-{{ $duration := mul $n $slideSeconds }}
-<section class="hero" data-slide-interval="{{ mul $slideSeconds 1000 }}">
-  <div class="hero-slides" aria-hidden="true">
-    {{ range $i, $s := $slides }}
-      <div class="hero-slide{{ if eq $i 0 }} is-active{{ end }}" style="background-image: linear-gradient(rgba(4,35,71,0.45), rgba(4,35,71,0.65)), url('{{ $s.image | relURL }}');"></div>
-    {{ end }}
-  </div>
-  <div class="container hero-inner">
-    <p class="hero-eyebrow">Londonas Tautas Deju Kopa</p>
-    <h1 class="hero-title">Salinieki</h1>
-    <p class="hero-tagline">Latviešu tautas deju kopa Londonā kopš 2012. gada</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ "/par-mums/" | relURL }}">Par mums</a>
-      <a class="btn btn-ghost" href="{{ "/kontakti/" | relURL }}">Nāc dejot!</a>
-    </div>
-  </div>
-</section>
+{{ partial "hero.html" . }}
 
 <section class="home-main section-band">
   <div class="container home-grid">
@@ -41,67 +19,9 @@
       </div>
     </div>
 
-    <aside class="home-side-col">
-      <div class="sidebar-block sidebar-cta">
-        <h3 class="sidebar-title">Nāc dejot!</h3>
-        <p>Mēģinājumi notiek Daugavas Vanagu namā, 72 Queensborough Terrace, W2 3SH, katru pirmdienu plkst. 19:00. Puiši un pāri laipni aicināti!</p>
-        <p>Ja ir interese, sazinies ar mums: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
-        <div class="sidebar-map">
-          <iframe
-            src="https://www.google.com/maps?q=72+Queensborough+Terrace,+London+W2+3SH&output=embed"
-            width="100%"
-            height="220"
-            style="border:0;"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Daugavas Vanagu nams, 72 Queensborough Terrace, W2 3SH"
-          ></iframe>
-        </div>
-      </div>
-      <div class="sidebar-block">
-        <h3 class="sidebar-title">Kalendārs</h3>
-        <ul class="calendar-list">
-          {{ range .Site.Params.calendar }}
-            <li><span class="cal-date">{{ .date }}</span> – {{ .title }}</li>
-          {{ end }}
-        </ul>
-      </div>
-      <div class="sidebar-block">
-        <h3 class="sidebar-title">Mūs atbalsta</h3>
-        <div class="supporter-list">
-          {{ range .Site.Params.supporters }}
-            <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}">
-              <img src="{{ .logo | relURL }}" alt="{{ .name }}">
-            </a>
-          {{ end }}
-        </div>
-      </div>
-      <div class="sidebar-block">
-        <h3 class="sidebar-title">Sociālie tīkli</h3>
-        {{ partial "social.html" . }}
-      </div>
-    </aside>
+    {{ partial "sidebar.html" . }}
   </div>
 </section>
-
-{{ if gt $n 1 }}
-<script>
-(function () {
-  var hero = document.querySelector('.hero[data-slide-interval]');
-  if (!hero) return;
-  var slides = hero.querySelectorAll('.hero-slide');
-  if (slides.length < 2) return;
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var interval = parseInt(hero.dataset.slideInterval, 10) || 6000;
-  var i = 0;
-  setInterval(function () {
-    slides[i].classList.remove('is-active');
-    i = (i + 1) % slides.length;
-    slides[i].classList.add('is-active');
-  }, interval);
-})();
-</script>
-{{ end }}
 
 <section class="cta-band">
   <div class="container cta-inner">
