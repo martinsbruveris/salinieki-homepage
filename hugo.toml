@@ -60,6 +60,10 @@ summaryLength = 40
   url = "/foto/"
   weight = 20
 [[menu.main]]
+  name = "Video"
+  url = "/video/"
+  weight = 25
+[[menu.main]]
   name = "Par mums"
   url = "/par-mums/"
   weight = 30
