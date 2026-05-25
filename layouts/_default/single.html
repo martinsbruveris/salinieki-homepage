@@ -3,7 +3,7 @@
   <header class="page-header container">
     <h1 class="page-title">{{ .Title }}</h1>
     {{ if eq .Section "news" }}
-      <p class="page-meta">By Mārtiņš Brūveris / {{ .Date.Format "January 2, 2006" }}</p>
+      <p class="page-meta">Mārtiņš Brūveris / {{ .Date | time.Format ":date_long" }}</p>
     {{ end }}
   </header>
   <div class="page-content container">

@@ -16,7 +16,7 @@
       {{ if $hasLink }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}
     </h3>
     <p class="news-card-meta">
-      <span class="news-card-date">{{ .Date.Format "2. January, 2006." }}</span>
+      <span class="news-card-date">{{ .Date | time.Format ":date_long" }}</span>
       {{ with .Params.location }}<span class="news-card-location">{{ . }}</span>{{ end }}
     </p>
     <div class="news-card-text">
