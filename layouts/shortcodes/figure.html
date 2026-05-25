@@ -1,0 +1,16 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" -}}
+{{- $img := resources.Get $src -}}
+{{- if $img -}}
+  {{- $display := $img.Resize "1200x q85" -}}
+  <figure>
+    <img src="{{ $display.RelPermalink }}" width="{{ $display.Width }}" height="{{ $display.Height }}" alt="{{ $alt }}" loading="lazy">
+    {{- with $caption }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end -}}
+  </figure>
+{{- else -}}
+  <figure>
+    <img src="{{ $src | relURL }}" alt="{{ $alt }}" loading="lazy">
+    {{- with $caption }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end -}}
+  </figure>
+{{- end -}}

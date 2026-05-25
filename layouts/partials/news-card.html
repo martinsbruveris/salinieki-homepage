@@ -1,13 +1,20 @@
 {{ $hasLink := .Params.hasFullArticle | default false }}
 <article class="news-card">
   {{ with .Params.coverImage }}
+    {{ $src := . }}
+    {{ with resources.Get . }}
+      {{ $thumb := .Resize "800x q85" }}
+      {{ $src = $thumb.RelPermalink }}
+    {{ else }}
+      {{ $src = . | relURL }}
+    {{ end }}
     {{ if $hasLink }}
       <a class="news-card-media" href="{{ $.RelPermalink }}">
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        <img src="{{ $src }}" alt="{{ $.Title }}" loading="lazy">
       </a>
     {{ else }}
       <div class="news-card-media">
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        <img src="{{ $src }}" alt="{{ $.Title }}" loading="lazy">
       </div>
     {{ end }}
   {{ end }}
