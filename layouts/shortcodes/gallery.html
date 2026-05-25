@@ -1,0 +1,12 @@
+{{- $id := .Get "id" -}}
+{{- $dir := .Get "dir" | default "/images/par-mums" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $images := split (.Get "images") "," -}}
+<div class="gallery">
+  {{- range $images -}}
+    {{- $src := printf "%s/%s" $dir (trim . " ") -}}
+    <a href="{{ $src }}" class="glightbox" data-gallery="{{ $id }}">
+      <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy">
+    </a>
+  {{- end -}}
+</div>
