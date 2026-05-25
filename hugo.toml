@@ -56,13 +56,17 @@ summaryLength = 40
   url = "/"
   weight = 10
 [[menu.main]]
+  name = "Foto"
+  url = "/foto/"
+  weight = 20
+[[menu.main]]
   name = "Par mums"
   url = "/par-mums/"
-  weight = 20
+  weight = 30
 [[menu.main]]
   name = "Kontakti"
   url = "/kontakti/"
-  weight = 30
+  weight = 40
 
 [markup]
   [markup.goldmark.renderer]
