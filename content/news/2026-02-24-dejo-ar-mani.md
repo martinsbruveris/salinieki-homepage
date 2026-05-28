@@ -1,10 +1,14 @@
 ---
-title: "Dejo ar Mani, Aberdīna"
+title: Dejo ar Mani, Aberdīna
 date: 2026-02-24
-location: "Aberdīna, Lielbritānija"
-coverImage: "images/foto/2026-02-dejo-ar-mani/01-grupas-bilde.jpg"
+location: Aberdīna, Lielbritānija
+coverImage: images/foto/2026-02-dejo-ar-mani/01-grupas-bilde.jpg
 summary: >
-  Latviešu Tautas deju lielkoncertā "Dejo ar Mani" deju kopa "Salinieki" ar lielu prieku atgriezās vēlreiz pēc ielūguma piedalīties šajā skaistajā notikumā. Koncerta laikā izdejojām mūsu vadītāja Alda Salma horeogrāfēto deju "Dzīvības koks", deju "Mēs ciemiņus gaidīdami", kā arī noslēdzām koncertu tieši pirms fināla ar deju "Ai, tēvu zeme".
+  Latviešu Tautas deju lielkoncertā "Dejo ar Mani" deju kopa "Salinieki" ar lielu 
+  prieku atgriezās vēlreiz pēc ielūguma piedalīties šajā skaistajā notikumā. Koncerta 
+  laikā izdejojām mūsu vadītāja Alda Salma horeogrāfēto deju "Dzīvības koks", deju "Mēs 
+  ciemiņus gaidīdami", kā arī noslēdzām koncertu tieši pirms fināla ar deju "Ai, tēvu 
+  zeme".
 hasFullArticle: true
 ---
 

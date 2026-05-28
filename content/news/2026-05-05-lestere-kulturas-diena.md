@@ -1,8 +1,8 @@
 ---
-title: "10. Kultūras Diena Lesterā"
+title: 10. Kultūras Diena Lesterā
 date: 2026-05-05
-location: "Lestera, Lielbritānija"
-coverImage: "images/foto/2026-05-lestera-kulturas-diena/04-grupas-bilde.jpg"
+location: Lestera, Lielbritānija
+coverImage: images/foto/2026-05-lestera-kulturas-diena/04-grupas-bilde.jpg
 summary: >
   Maija sākumā Salinieki devās uz Lesteri lai piedalītos 10. Kultūras Dienā Apvienotā
   Karalistē. Dejojām Alda Salma horeogrāfēto deju "Dzīvības koks" un "Zeme zeļ, zeme 
